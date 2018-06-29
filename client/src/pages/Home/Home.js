@@ -2,14 +2,24 @@ import React, { Component } from 'react';
 
 class Home extends Component {
 
+
+
     render() {
         return (
             <React.Fragment>
                 <div className='container'>
                     <div className='jumbotron bg-white'>
-                        <h1 className='h1'>
-                            Search Articles
-                        </h1>
+                        <div className='row'>
+                            <div className='col'>
+                                <h1 className='h3'>
+                                    Search Articles
+                                </h1>
+                            </div>
+                            <div className='col text-right'>
+                                <a class="btn btn-outline-secondary btn-md" href="#" role="button" onClick={this.handleSearchClick}>Search</a>
+                            </div>
+                        </div>
+                        
                         <hr className="my-4" />
                         <form>
                             <div class="form-row">
@@ -25,7 +35,6 @@ class Home extends Component {
                             </div>
                         </form>
                         <hr className='my-4' />
-                        <a class="btn btn-outline-secondary btn-md" href="#" role="button">Search</a>
                     </div>
                 </div>                
             </React.Fragment>
