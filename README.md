@@ -1,6 +1,7 @@
 # nytreact
 A full-stack news scrapper application utilizing the MERN stack.
 
+https://nyt-extra.herokuapp.com/
 
 ## About This Boilerplate MERN Stack
 
@@ -19,11 +20,19 @@ yarn install
 cd ..
 ``
 
-After both installations complete, run the following command in your terminal:
+After both installations complete, run the following command in a separate terminal to start the MongoDB server:
+
+```
+mongod
+```
+
+Then run the following command in your project terminal to start the Application:
 
 ```
 yarn start
 ```
+
+Note: You will need to start your MongoDB server to have DB & API functionality in the Application.
 
 That's it, your app should be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
 
