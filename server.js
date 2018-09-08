@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001;
 
 mongoose.Promise = global.Promise;
 
-heroku reqs
+// heroku reqs
 const path = require('path');
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 
@@ -26,7 +26,7 @@ app.use(routes);
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/nytreact');
 
-heroku reqs
+// heroku reqs
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
